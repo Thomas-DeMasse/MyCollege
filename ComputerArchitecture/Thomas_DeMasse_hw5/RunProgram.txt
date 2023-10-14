@@ -1,0 +1,2 @@
+./NewMasm < AddInput.asm > AddInput.obj
+./mic1 NewPromFile.dat AddInput.obj 0 2048
