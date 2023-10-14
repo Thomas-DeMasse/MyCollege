@@ -1,2 +1,0 @@
-Command 1: ./masm < RecurFib.asm > HW3.obj
-Command 2: ./mic1 prom.dat HW3.obj 0 2048
