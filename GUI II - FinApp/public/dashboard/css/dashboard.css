@@ -1,0 +1,47 @@
+.container {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: whitesmoke;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.chart-container {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: #fff;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/*
+canvas {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+*/
+
+.canvasPieChart{
+  display:flex;
+  justify-content: center;
+  padding-left: 100px;
+}
+
+.select-container {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.select-label {
+  margin-right: 10px;
+}
+
+.select-dropdown {
+  padding: 5px;
+}
