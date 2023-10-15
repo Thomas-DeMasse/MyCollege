@@ -1,0 +1,107 @@
+/*--
+File: style.css
+GUI Assignment: Multiplication Table
+Thomas DeMasse, UMass Lowell Computer Science, Thomas_DeMasse@student.uml.edu
+Copyright (c) 2023 by Thomas DeMasse. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+updated by TD on June 22, 2023 at 5:45 PM */
+
+html {
+    height: 100%;
+}
+
+body {
+    max-width: 940px;
+    min-height: 100%;
+    min-width: 700px;
+    padding: 20px;
+    width: 65%;
+    background-image: url("../background/webhostbackground.jpg");
+    background-color: #ffffff;
+    color: #000000;
+    margin: 0 auto;
+
+}
+
+h1 {
+    color: rgb(248, 248, 248);
+}
+
+html,
+body,
+input {
+    font: normal 16px/100% Arial, sans-serif;
+}
+
+#form fieldset {
+    border: 1px solid #000000;
+    margin-bottom: 20px;
+    padding: 10px 20px 15px 20px;
+}
+
+#form legend {
+    font-weight: bold;
+}
+
+#form label:not(.error) {
+    display: block;
+}
+
+form {
+    font-family: Arial, sans-serif;
+    padding: 10px;
+    background-color: #eaeaea;
+
+}
+
+#mySubmit {
+    margin-left: 110px;
+}
+
+#form input[type='number'] {
+    margin-right: 20px;
+}
+
+#form input[type='submit'] {
+    color: #ffffff;
+    margin-bottom: 20px;
+    background-color: #0400fa;
+    border: 0;
+    padding: 10px 20px;
+}
+
+#form input[type='submit']:hover {
+    color: #ffffff;
+}
+
+#form input[type='submit']:active {
+    background-color: #000000;
+}
+
+#table {
+    outline: 1px solid #0400fa;
+    border-collapse: collapse;
+    display: block;
+    max-height: 400px;
+    text-align: center;
+    width: 100%;
+    overflow: scroll;
+    position: sticky;
+}
+
+#table tr:nth-child(even) td:nth-child(odd),
+#table tr:nth-child(odd) td:nth-child(even) {
+    background-color: #0400fa;
+}
+
+#table th {
+    background-color: #000000;
+    color: #ffffff;
+    margin: 0;
+}
+
+#table th,
+#table td {
+    border: 2px solid #ffffff;
+    padding: 0.8em;
+}
