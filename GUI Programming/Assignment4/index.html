@@ -1,0 +1,56 @@
+<!--
+File: index.html
+GUI Assignment: Multiplication Table
+Thomas DeMasse, UMass Lowell Computer Science, Thomas_DeMasse@student.uml.eduf
+Copyright (c) 2021 by Thomas DeMasse. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+updated by TD on June 22, 2023 at 5:45 PM -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Multiplication Table</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>"
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
+  <script src="js/script.js"></script>
+</head>
+
+<body>
+  <h1>Multiplication Assignment</h1>
+  <form id="form" novalidate>
+    <fieldset>
+      <legend>Horizontal</legend>
+      <div>
+        <label for="horizontalMin">Minimum</label>
+        <input type="number" name="horizontalMin" autocomplete="off">
+      </div>
+
+      <div>
+        <label for="horizontalMax">Maximum</label>
+        <input type="number" name="horizontalMax" autocomplete="off">
+      </div>
+      <div id="multiplierError"></div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Vertical</legend>
+      <div>
+        <label for="verticalMin">Minimum</label>
+        <input type="number" name="verticalMin" autocomplete="off">
+      </div>
+
+      <div>
+        <label for="verticalMax">Maximum</label>
+        <input type="number" name="verticalMax" autocomplete="off">
+      </div>
+      <div id="multiplicandError"></div>
+    </fieldset>
+
+    <input type="submit" value="Create Table">
+  </form>
+</body>
+
+</html>
