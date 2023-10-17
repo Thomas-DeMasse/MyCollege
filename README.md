@@ -57,9 +57,6 @@
             </td>
             <td><a href="#"><img alt="Sheets" title="Sheets" height="28px"
                         src="https://img.icons8.com/color/48/000000/google-sheets.png" /></a></td>
-            <td><a href="#"><img alt="GitHub" title="GitHub" height="28px"
-                        src="https://i.imgur.com/DZgetVv.png" /></a>
-            </td>
         </tr>
         <tr>
             <td><a href="#"><img alt="Terminal" title="Terminal" height="28px"
@@ -70,8 +67,3 @@
         </tr>
     </tbody>
 </table>
-
-<!-- https://github.com/gautamkrishnar/blog-post-workflow -->
-
-
-<!-- https://github.com/jamesgeorge007/github-activity-readme -->
