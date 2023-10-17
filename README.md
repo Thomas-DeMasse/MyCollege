@@ -14,7 +14,7 @@
 
 <p align="left">
   <a href="https://www.linkedin.com/in/thomas-demasse/"><img alt="LinkedIn" title="LinkedIn" src="https://img.shields.io/badge/-LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
-  <a href="https://gooogle.com"><img alt="Google" title="Email Me at: TjDeMasse17@gmail.com" src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"/></a>
+  <a href="https://google.com"><img alt="Google" title="Email Me at: TjDeMasse17@gmail.com" src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"/></a>
   </p>
 </p>
 
