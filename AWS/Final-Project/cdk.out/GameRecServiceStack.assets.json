@@ -1,0 +1,32 @@
+{
+  "version": "36.0.0",
+  "files": {
+    "1659c71793a85a659bf6430be12da301a464ca98d5a42b9590ef1c07ea22d38c": {
+      "source": {
+        "path": "asset.1659c71793a85a659bf6430be12da301a464ca98d5a42b9590ef1c07ea22d38c",
+        "packaging": "zip"
+      },
+      "destinations": {
+        "current_account-current_region": {
+          "bucketName": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}",
+          "objectKey": "1659c71793a85a659bf6430be12da301a464ca98d5a42b9590ef1c07ea22d38c.zip",
+          "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-file-publishing-role-${AWS::AccountId}-${AWS::Region}"
+        }
+      }
+    },
+    "cb5c8f7e1ae8a66720f265e647c6d634a6a9401538f3fbcd41dce89dfa7cdc5b": {
+      "source": {
+        "path": "GameRecServiceStack.template.json",
+        "packaging": "file"
+      },
+      "destinations": {
+        "current_account-current_region": {
+          "bucketName": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}",
+          "objectKey": "cb5c8f7e1ae8a66720f265e647c6d634a6a9401538f3fbcd41dce89dfa7cdc5b.json",
+          "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-file-publishing-role-${AWS::AccountId}-${AWS::Region}"
+        }
+      }
+    }
+  },
+  "dockerImages": {}
+}

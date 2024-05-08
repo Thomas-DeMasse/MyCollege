@@ -1,0 +1,121 @@
+{
+  "version": "36.0.0",
+  "artifacts": {
+    "GameRecServiceStack.assets": {
+      "type": "cdk:asset-manifest",
+      "properties": {
+        "file": "GameRecServiceStack.assets.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+      }
+    },
+    "GameRecServiceStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "GameRecServiceStack.template.json",
+        "terminationProtection": false,
+        "validateOnSynth": false,
+        "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-deploy-role-${AWS::AccountId}-${AWS::Region}",
+        "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-cfn-exec-role-${AWS::AccountId}-${AWS::Region}",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/cb5c8f7e1ae8a66720f265e647c6d634a6a9401538f3fbcd41dce89dfa7cdc5b.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
+        "additionalDependencies": [
+          "GameRecServiceStack.assets"
+        ],
+        "lookupRole": {
+          "arn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-lookup-role-${AWS::AccountId}-${AWS::Region}",
+          "requiresBootstrapStackVersion": 8,
+          "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+        }
+      },
+      "dependencies": [
+        "GameRecServiceStack.assets"
+      ],
+      "metadata": {
+        "/GameRecServiceStack/GameRecServiceDB": [
+          {
+            "type": "aws:cdk:hasPhysicalName",
+            "data": {
+              "Ref": "GameRecServiceDBFEE8E065"
+            }
+          }
+        ],
+        "/GameRecServiceStack/GameRecServiceDB/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "GameRecServiceDBFEE8E065"
+          }
+        ],
+        "/GameRecServiceStack/GameRecServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "GameRecServiceRole2D08F3EF"
+          }
+        ],
+        "/GameRecServiceStack/GameRecServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "GameRecServiceRoleDefaultPolicyDF40AA68"
+          }
+        ],
+        "/GameRecServiceStack/GameRecServ_Lambda/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "GameRecServLambda49452A53"
+          }
+        ],
+        "/GameRecServiceStack/GameRecServ_Lambda/FunctionUrl/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "GameRecServLambdaFunctionUrlAAEC3636"
+          }
+        ],
+        "/GameRecServiceStack/GameRecServ_Lambda/invoke-function-url": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "GameRecServLambdainvokefunctionurlF3039B95"
+          }
+        ],
+        "/GameRecServiceStack/Page to get lambda url": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Pagetogetlambdaurl"
+          }
+        ],
+        "/GameRecServiceStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/GameRecServiceStack/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable"
+          }
+        ],
+        "/GameRecServiceStack/BootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BootstrapVersion"
+          }
+        ],
+        "/GameRecServiceStack/CheckBootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CheckBootstrapVersion"
+          }
+        ]
+      },
+      "displayName": "GameRecServiceStack"
+    },
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    }
+  }
+}
